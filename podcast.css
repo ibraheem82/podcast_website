@@ -1,0 +1,454 @@
+
+
+
+/* General styles */
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./Montserrat/MontserratAlternates-Medium.ttf");
+}
+
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./Montserrat/MontserratAlternates-Bold.ttf");
+    font-weight: bold;
+}
+
+
+:root{
+
+    --primary: #CD4631;
+    --davys-greys: #4D4D4D;
+}
+
+
+.header{
+    background-color: #F7EDE8;
+    padding: 1rem 8rem 2rem 8rem;
+}
+
+
+body{
+    margin: 0px;
+    font-family: "Montserrat";
+}
+
+/* Nav Menu styles */
+
+.header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    height: 4rem;
+}
+
+
+.nav-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+}
+
+
+.nav-left .logo{
+    margin-right: 3rem;
+}
+
+
+.nav-left a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+.nav-left a:hover{
+    text-decoration: underline;
+}
+
+.nav-right .btn{
+    margin-left: 1rem;
+}
+
+
+/* General button styles */
+
+.btn{
+    height: 2.5rem;
+    border: 2px solid black;
+    font-family: "Montserrat";
+    border-radius: 8px;
+    font-weight: bold;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    cursor: pointer;
+}
+
+
+.btn.secondary{
+    background-color: #F7EDE8;
+}
+
+.btn.primary{
+    background-color: black;
+    color: white;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Hero Container styles */
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5rem;
+}
+
+.hero-img{
+    width: 40%;
+}
+
+.hero-info{
+    width: 50%;
+}
+
+.episode-title{
+    width: 90%;
+    border-bottom: 1px solid black;
+}
+.number-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 0.9rem;
+    align-items: center;
+}
+
+.break-line{
+    display: block;
+}
+
+.number-container .featured{
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    font-size: 0.8rem;
+    padding: 4px;
+}
+
+.episode-description{
+    line-height: 2rem;
+}
+
+
+.metadata{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.metadata .author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.metadata .author .avatar{
+    width: 2.5rem;
+    height: auto;
+}
+
+.metadata .author .host-label{
+    margin-left: 1rem;
+}
+
+.metadata .author .host-name{
+    margin-left: 0.5rem;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+
+/* Episode actions */
+.episode-actions{
+    margin-top: 4rem;
+    display: flex;
+}
+
+.episode-actions button{
+    margin-right: 1.5rem;
+}
+
+
+.episode-actions button.secondary{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn.lg{
+    height: 4rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    box-shadow: 6px 6px 0 rgba(0,0,0, 0.25);
+}
+
+.episode-actions button.secondary span{
+    margin-left: 0.5rem;
+}
+
+.episode-actions button.secondary img{
+    margin-right: 0.5rem;
+}
+
+.episode-actions button.secondary .minutes{
+    color: var(--primary);
+    font-weight: bold;
+}
+
+button.btn:hover{
+    border: 2px solid var(--primary);
+}
+
+
+button.btn:active{
+    box-shadow: none;
+    margin-top: .1rem;
+}
+
+.tags{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.tags .label{
+    margin-right: 4rem;
+}
+
+.tags .tag-name{
+    border: 1px solid var(--davys-greys);
+    border-radius: 4px;
+    padding: 6px 12px 6px 12px;
+    color: var(--davys-greys);
+
+}
+
+
+
+/* Latest episodes */
+
+.episodes{
+    padding: 6rem 8rem 4rem 8rem;
+}
+
+
+.section-title{
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.genre-filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 8rem;
+    height: 4rem;
+    align-items: center;
+    border-bottom: 1px solid var(--davys-greys);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.genre-filter span{
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--davys-greys);
+}
+
+
+.genre-filter .active{
+    font-weight: bold;
+    color: var(--primary);
+}
+
+
+
+/* episode layout */
+
+.episode-list{
+    display: flex;
+    flex-direction: row;
+    margin-top: 8rem;
+}
+
+.episode-list .left-col{
+    padding-right: 1rem;
+}
+
+.episode-list .right-col{
+    padding-left: 1rem;
+}
+
+.ep-container{
+    border: 2px solid black;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.ep-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.ep-info img{
+    width: 30%;
+}
+
+.ep-description{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    height: 6rem;
+}
+
+.ep-description .ep-number{
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.ep-description .ep-title{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.ep-description .ep-blurb{
+    font-size: 0.9rem;
+}
+
+.ep-tags{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
+.ep-tags .tag-names span{
+    border: 1px solid var(--davys-greys);
+    padding: 0.5rem;
+    border-radius: 4px;
+    color: var(--davys-greys);
+    font-size: .9rem;
+}
+
+.ep-tags .hosts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.ep-tags .hosts .label{
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+
+.ep-tags .hosts img{
+    height: 2.5rem;
+    width: auto;
+}
+
+
+
+/* :nth-child(2n): Applies the styles to every even child element (2nd, 4th, 6th, etc.) */
+/* .right-col .ep-container:nth-child(even){ */
+
+/* 2n is an formula. n represents any positive integer (1, 2, 3, etc.). So, 2n translates to 21, 22, 2*3, and so on, resulting in 2, 4, 6, 8... */
+
+.right-col .ep-container:nth-child(2n){
+    box-shadow: 10px 10px 0px #81ADC8;
+    /* background-color: forestgreen; */
+}
+
+
+/* 2n - 1 is the formula. As before, n represents any positive integer (1, 2, 3, etc.). So, 2n - 1 translates to (2*1 - 1), (2*2 - 1), (2*3 - 1), and so on, resulting in 1, 3, 5, 7... */
+/* .left-col .ep-container:nth-child(2n - 1){ */
+.left-col .ep-container:nth-child(odd){
+    box-shadow: 10px 10px 0px #81ADC8;
+    /* background-color: indianred; */
+
+}
+.right-col .ep-container:nth-child(2n) .ep-title,
+.left-col .ep-container:nth-child(2n - 1) .ep-title{
+    color: var(--primary);
+}
+
+
+/* Footer content */
+
+footer{
+    padding: 8rem;
+    border: 1px solid black;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.copyright{
+    width: 20%;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.copyright span{
+    margin-left: 2rem;
+}
+
+.copyright .social{
+    margin-right: 1rem;
+}
+
+.bottom-nav{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 4rem;
+}
+
+.bottom-nav .left-col, .bottom-nav .right-col{
+    width: 40%;
+}
+
+.bottom-nav .active{
+    color: var(--primary);
+}
+
+.bottom-nav p{
+    cursor: pointer;
+}
+
+.platforms{
+    width: 35%;
+    line-height: 1.5rem;
+}
+
+
+.platforms img{
+    margin-right: 2rem;
+}
